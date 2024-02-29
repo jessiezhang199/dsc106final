@@ -8,7 +8,8 @@
 
 </script>
 <Router>
-  <Route path="/yes" component={YesPage} />
-  <Route path="/no" component={NoPage} />
-  <Route path="/" component={HomePage} />
+<Route path="/yes" component={YesPage} />
+<Route path="/no" component={NoPage} />
+<!-- <Route path="/home" component={HomePage} /> -->
 </Router>
+<HomePage />
