@@ -10,5 +10,5 @@
 <Router>
   <Route path="/yes" component={YesPage} />
   <Route path="/no" component={NoPage} />
+  <Route path="/" component={HomePage} />
 </Router>
-<HomePage/>
