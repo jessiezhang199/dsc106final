@@ -1,6 +1,5 @@
 <script>
-  import { navigate} from "svelte-routing"
-
+  import { navigate } from 'svelte-routing';
   function goToNoPage() {
     // Navigate to the page with information about MBTI test
     navigate("/no");
