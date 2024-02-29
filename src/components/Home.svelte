@@ -11,11 +11,6 @@
     navigate("/yes");
   }
 </script>
-<!-- <Router>
-  <Route path="/" component={Home} />
-  <Route path="/yes" component={Yespage} />
-  <Route path="/no" component={Nopage} />
-</Router> -->
 
 
 <main>
