@@ -40,7 +40,7 @@
     // Check the structure of parsed data
     console.log(mbtiData);
 
-    const baseURL = location.hostname === 'localhost' ? '' : '/dsc106_project_3_draft';
+    const baseURL = location.hostname === 'localhost' ? '' : '/dsc106final';
 
     const mapRes = await fetch(`${baseURL}/world.geojson`);
     mapData = await mapRes.json();
@@ -238,6 +238,10 @@
 </style>
 
 <h1>Which MBTI Type is Most Common in Your Country?</h1>
+<p style="position: absolute; top: 250px; left: 20px; font-size: 16px; max-width: 150px;">
+  In many countries, INFP types account for the majority.
+</p>
+
 <div class="search-container">
   <input type="text" 
   placeholder="Country" 
