@@ -214,6 +214,27 @@
   .autocomplete-suggestions li:hover {
     background-color: #f0f0f0;
   }
+  .legend-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .legend-item svg {
+    margin-right: 5px;
+  }
+
+  .legend-item span {
+    font-size: 14px;
+  }
 </style>
 
 <h1>Which MBTI Type is Most Common in Your Country?</h1>
@@ -240,3 +261,22 @@
 <div class="tooltip" style="top: {tooltipY}px; left: {tooltipX}px;" class:show="{showTooltip}">
   {tooltipContent}
 </div>
+
+<div class="legend-container">
+  {#each mbtiColors.domain() as type}
+    <div class="legend-item">
+      <svg width="20" height="20">
+        <rect fill={mbtiColors(type)} width="20" height="20"></rect>
+      </svg>
+      <span>{type}</span>
+    </div>
+  {/each}
+  <div class="legend-item">
+    <svg width="20" height="20">
+      <rect fill="#DED3D1" width="20" height="20"></rect>
+    </svg>
+    <span>No Data</span>
+  </div>
+</div>
+<p style="position: fixed; top: 550px; right: 20px;">Data source: <a href="https://www.kaggle.com/datasets/yamaerenay/mbtitypes-full" target="_blank">https://www.kaggle.com/datasets/yamaerenay/mbtitypes-full</a></p>
+
