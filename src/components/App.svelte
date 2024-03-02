@@ -8,7 +8,7 @@
   import Graph from "./Global.svelte";
 
 </script>
-<HomePage />
+<Graph />
 <Router>
 <Route path="/yes" component={YesPage} />
 <Route path="/no" component={NoPage} />
